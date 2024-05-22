@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPBurguer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="text-center mb-4"><p>Faça seu pedido: </p></h2>
+    <form method="post" action="processa_pedido.php">
+        <div class="form-group">
+            <label for="nome_cliente">Nome do Cliente:</label>
+            <input type="text" class="form-control" id="nome_cliente" name="nome_cliente" required>
+        </div>
+        <div class="form-group">
+            <label for="tipo_hamburguer">Escolha o tipo de hambúrguer:</label>
+            <select class="form-control" id="tipo_hamburguer" name="tipo_hamburguer">
+                <option value="X-tudo">X-tudo</option>
+                <option value="X-bacon">X-bacon</option>
+                <option value="X-salada">X-salada</option>
+                <option value="X-frango">X-frango</option>
+                <option value="Hambúrguer Artesanal">Hambúrguer Artesanal</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Fazer Pedido</button>
+    </form>
+</div>
+
+</body>
+</html>
